@@ -47,7 +47,7 @@ The following represents the case of $mc$​ when it comprises visual context. T
 
 ## Image Download
 
-Please download the images from this [LINK](https://drive.google.com/file/d/1Ex7kRqIsG2oYdl4BPIC392pxuwnwML1m/view?usp=drive_link). Then, place them into the *images/* directory.
+Please download the images from the following links: [Google Drive](https://drive.google.com/file/d/1Ex7kRqIsG2oYdl4BPIC392pxuwnwML1m/view?usp=drive_link) or [Baidu Drive](https://pan.baidu.com/s/1dnZJDOAc3q419p-VwIViFw?pwd=a7xi). Then, place them into the *images/* directory.
 
 ## Data Organization
 
