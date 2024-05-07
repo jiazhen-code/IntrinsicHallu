@@ -17,7 +17,7 @@
 
 ## Introduction
 
-PhD is a dataset for Visual Hallucination Evaluation (VHE). Depending on what to ask (objects, attributes, ...) and how the questions are asked (neural or misleading), we structure PhD along two dimensions, i.e. task and mode. The dataset construction centers around task-specific hallucinatory elements (hitems). The overall evaluation data consists of over 30,000 samples.
+PhD is a dataset for Visual Hallucination Evaluation (VHE). Depending on what to ask (objects, attributes, ...) and how the questions are asked (neural or misleading), we structure PhD along two dimensions, i.e. task and mode. Our PhD dataset aims to explore the intrinsic causes of visual hallucination. The dataset construction centers around task-specific hallucinatory elements (hitems). The overall evaluation data consists of over 30,000 samples.
 
 ### Task
 
@@ -47,7 +47,7 @@ The following represents the case of $mc$​ when it comprises visual context. T
 
 ## Image Download
 
-Please download the images from this [LINK](). Then, place them into the *images/* directory.
+Please download the images from this [LINK](https://drive.google.com/file/d/1Ex7kRqIsG2oYdl4BPIC392pxuwnwML1m/view?usp=drive_link). Then, place them into the *images/* directory.
 
 ## Data Organization
 
