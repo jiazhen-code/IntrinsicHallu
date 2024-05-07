@@ -26,16 +26,15 @@ We provide **two** modes: neutral and misleading. In the neutral mode, questions
 
 ### Showcases
 
-**Ten tracks**
-
+**Ten tracks:**
 Showcases of the two modes and five subtasks for VHE, collectively forming **ten** evaluation tracks. $h$, $gd$, $q$, and $a$ symbolize hitem, grounding truth item, question, and answer, respectively. Additionally, $mc$ signifies the misleading context, intentionally contrasting with the image content, designed to enable more stringent assessments in the misleading mode. 
 
    <img src="figs/example.png" alt="images" style="zoom:67%;" />
 
-**Additional track**
+**Additional track:**
 The following represents the case of $mc$ when it comprises visual context. The task involves object recognition.
 
-   <img src="figs/example2.png" style="zoom:50%;" />
+   <img src="figs/example2.png" style="zoom:30%;" />
 
 <!-- ## Data Statistics
 
@@ -76,25 +75,26 @@ data.jsonl
 # It includes the following keys:
 
 """
-image_path: indicate the path to the test image.
-hitem_gt: specify the item around which the question is constructed.
-question:
-answer:
-task: one of the 5 tasks
-mode: neutral or misleading
+· image_path: indicate the path to the test image.
+· hitem_gt: specify the item around which the question is constructed.
+· question:
+· answer:
+· task: one of the 5 tasks
+· mode: neutral or misleading
 """
 
 # For example
-{"image_path": "images/authentic/AMBER_411.jpg", "hitem_gt": "traffic sign", "answer": "No", "question": ..., "task": "object_recognition", "mode": "misleading_textual_strong"}
+{"image_path": "images/authentic/COCO_val2014_000000125069.jpg", "hitem_gt": "dresser", "answer": "No", 
+"question": ..., "task": "object_recognition", "mode": "misleading_textual_indirect"}
 ```
 
 
-To distinguish tracks, it's recommended to use the format task + mode for differentiation.
+To distinguish tracks, it's recommended to use the format `task + mode` for differentiation.
 ```python
 track = task + '_' + mode.split('_')[0] + mode.split('_')[1]
 textual_category = mode.split('_')[2] if len(mode.split('_')) == 3 else None
 ```
-
+`
 ## Evaluation Results
 
 The evaluation results of mainstream LVLMs evaluated by PhD are shown below.
