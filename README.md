@@ -102,6 +102,16 @@ track = task + '_' + mode.split('_')[0] + mode.split('_')[1]
 textual_category = mode.split('_')[2] if len(mode.split('_')) == 3 else None
 ```
 
+## Metric
+
+We focus on evaluating the accuracy rate, the recall rate for "Yes" answers, the recall rate for "No" answers. We first calculate the harmonic mean of these two recall rates as $H_{recall}$. To derive a comprehensive final score, we calculate the harmonic mean of the accuracy rate and the $H_{recall}$, which we term the PhD score. 
+
+<div align="center">
+  <img src="figs/phd_score.png" width="30%" alt="results1"> 
+</div>
+
+The recall rates for "Yes" and "No" answers gauge the model's propensity to respond with "Yes" or "No," respectively. The PhD score is designed to be sensitive to these tendencies, providing a nuanced understanding of the model's performance.
+
 ## Evaluation Results
 
 The evaluation results of mainstream LVLMs evaluated by PhD are shown below.
